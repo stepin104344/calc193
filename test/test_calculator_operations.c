@@ -68,13 +68,13 @@ int main() {
 
 //-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
 
-void test_do_add(void) {
+void test_add(void) {
   CU_ASSERT_EQUAL(7.000, add(5,2));
   CU_ASSERT_EQUAL(10.00, add(7,3));
   CU_ASSERT_EQUAL(2000.00, add(500,1500));
 }
 
-void test_do_subtract(void) {
+void test_subtract(void) {
   CU_ASSERT_EQUAL(3.00,subtract(5,2));
   CU_ASSERT_EQUAL(4.00, subtract(7,3));
   CU_ASSERT_EQUAL(1000.00, subtract(1500,500));
