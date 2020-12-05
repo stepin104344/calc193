@@ -48,7 +48,7 @@ int main() {
   CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);*/
   CU_add_test(suite, "TEST_POWER", test_power);
   CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
-  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_add);
+  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_odd);
   CU_add_test(suite, "TEST_MODULO", test_modulo);
 
 /* Note: Do not edit START*/
