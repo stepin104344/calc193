@@ -1,8 +1,8 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#include <calculator_operations.h>
-#define PROJECT_NAME "function"
+#include "calculator_operations.h"
+#define PROJECT_NAME "calc193"
 
 void test_add(void);
 void test_subtract(void);
@@ -68,31 +68,31 @@ int main() {
 
 //-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
 
-void test_do_add(void) {
+void test_add(void) {
   CU_ASSERT_EQUAL(7.000, add(5,2));
   CU_ASSERT_EQUAL(10.00, add(7,3));
   CU_ASSERT_EQUAL(2000.00, add(500,1500));
 }
 
-void test_do_subtract(void) {
+void test_subtract(void) {
   CU_ASSERT_EQUAL(3.00,subtract(5,2));
   CU_ASSERT_EQUAL(4.00, subtract(7,3));
   CU_ASSERT_EQUAL(1000.00, subtract(1500,500));
 }
 
-void test_do_multiply(void) {
+void test_multiply(void) {
   CU_ASSERT_EQUAL(10.00, multiply(5,2));
   CU_ASSERT_EQUAL(21.00, multiply(7,3));
   CU_ASSERT_EQUAL(5000.00, multiply(500,10));
 }
 
-void test_do_divide(void) {
+void test_divide(void) {
   CU_ASSERT_EQUAL(5.00, divide(10,2));
   CU_ASSERT_EQUAL(7.00, divide(7,1));
   CU_ASSERT_EQUAL(3.00, divide(1500,500));
 }
 
-void test_do_modulo(void) {
+void test_modulo(void) {
   CU_ASSERT_EQUAL(1, modulo(5,2));
   CU_ASSERT_EQUAL(3, modulo(7,4));
   CU_ASSERT_EQUAL(0, modulo(1500,500));
@@ -104,7 +104,7 @@ void test_do_modulo(void) {
   CU_ASSERT_EQUAL(6, do_fact(3));
 }*/
 
-void test_do_squareroot(void) {
+void test_squareroot(void) {
   CU_ASSERT_EQUAL(5.00, squareroot(25));
   CU_ASSERT_EQUAL(7.00, squareroot(49));
   CU_ASSERT_EQUAL(10.00, squareroot(100));
