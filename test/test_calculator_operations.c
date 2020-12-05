@@ -33,8 +33,8 @@ int main() {
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
 /* Note: Do not edit END */
 
-  CU_add_test(suite, "TEST_ADD", test_do_add);
-  CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
+  CU_add_test(suite, "TEST_ADD", test_add);
+  CU_add_test(suite, "TEST_SUBTRACT", test_subtract);
   CU_add_test(suite, "TEST_MULTIPLY", test_multiply);
   CU_add_test(suite, "TEST_DIVIDE", test_divide);
   CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
