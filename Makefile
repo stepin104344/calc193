@@ -5,7 +5,7 @@ BUILD = build
 SRC = src/calculator_operations.c\
 main.c\
 
-TEST_SRC = src/fcalculator_operations.c\
+TEST_SRC = src/calculator_operations.c\
 test/test_calculator_operations.c\
 
 INC = -Iinc\
