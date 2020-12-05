@@ -111,8 +111,8 @@ void test_squareroot(void) {
 }
 void test_fahrenheit_to_celsius(void)
 {
-  CU_ASSERT_EQUAL(37.7778,fahrenheit_to_celsius(100));
-  CU_ASSERT_EQUAL(23.8889,fahrenheit_to_celsius(75));
-  CU_ASSERT_EQUAL(43.3333,fahrenheit_to_celsius(110));
+  CU_ASSERT_DOUBLE_EQUAL(37.7778,fahrenheit_to_celsius(100),3);
+  CU_ASSERT_DOUBLE_EQUAL(23.8889,fahrenheit_to_celsius(75),3);
+  CU_ASSERT_DOUBLE_EQUAL(43.3333,fahrenheit_to_celsius(110),3);
 }
   
