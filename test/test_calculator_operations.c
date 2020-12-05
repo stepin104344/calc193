@@ -33,25 +33,25 @@ int main() {
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
 /* Note: Do not edit END */
 
-  CU_add_test(suite, "TEST_ADD", test_do_add);
-  CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
-  CU_add_test(suite, "TEST_MULTIPLY", test_do_multiply);
-  CU_add_test(suite, "TEST_DIVIDE", test_do_divide);
-  CU_add_test(suite, "TEST_SQUAREROOT", test_do_squareroot);
-  CU_add_test(suite, "TEST_FACTORIAL", test_do_factorial);
-  CU_add_test(suite, "TEST_FAHRENHEIT_TO_CELSIUS", test_do_fahrenheit_to_celsius);
-  CU_add_test(suite, "TEST_CELSIUS_TO_FAHRENHEIT", test_do_celsius_to_fahrenheit);
-  CU_add_test(suite, "TEST_FAHRENHEIT_TO_KELVIN", test_do_fahrenheit_to_kelvin);
-  CU_add_test(suite, "TEST_KELVIN_TO_FAHRENHEIT", test_do_kelvin_to_fahrenheit);
-  CU_add_test(suite, "TEST_CELSIUS_TO_KELVIN", test_do_celsius_to_kelvin);
-  CU_add_test(suite, "TEST_KELVIN_TO_CELSIUS", test_do_kelvin_to_celsius);
-  CU_add_test(suite, "TEST_LOGVALUE", test_do_modulus);
-  CU_add_test(suite, "TEST_LOG10VALUE", test_do_log10value);
-  CU_add_test(suite, "TEST_POWER", test_do_power);
-  CU_add_test(suite, "TEST_EXPONENTIAL", test_do_exponential);
-  CU_add_test(suite, "TEST_SQUAREROOT", test_do_squareroot);
-  CU_add_test(suite, "TEST_MODULO", test_do_modulo);
-  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_do_even_or_add);
+  CU_add_test(suite, "TEST_ADD", test_add);
+  CU_add_test(suite, "TEST_SUBTRACT", test_subtract);
+  CU_add_test(suite, "TEST_MULTIPLY", test_multiply);
+  CU_add_test(suite, "TEST_DIVIDE", test_divide);
+  CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
+  CU_add_test(suite, "TEST_FACTORIAL", test_factorial);
+  CU_add_test(suite, "TEST_FAHRENHEIT_TO_CELSIUS", test_fahrenheit_to_celsius);
+  CU_add_test(suite, "TEST_CELSIUS_TO_FAHRENHEIT", test_celsius_to_fahrenheit);
+  CU_add_test(suite, "TEST_FAHRENHEIT_TO_KELVIN", test_fahrenheit_to_kelvin);
+  CU_add_test(suite, "TEST_KELVIN_TO_FAHRENHEIT", test_kelvin_to_fahrenheit);
+  CU_add_test(suite, "TEST_CELSIUS_TO_KELVIN", test_celsius_to_kelvin);
+  CU_add_test(suite, "TEST_KELVIN_TO_CELSIUS", test_kelvin_to_celsius);
+  CU_add_test(suite, "TEST_LOGVALUE", test_modulus);
+  CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);
+  CU_add_test(suite, "TEST_POWER", test_power);
+  CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
+  CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
+  CU_add_test(suite, "TEST_MODULO", test_modulo);
+  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_add);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -106,6 +106,6 @@ void test_do_modul0(void) {
 
 void test_do_squareroot(void) {
   CU_ASSERT_EQUAL(5.00, squareroot(25));
-  CU_ASSERT_EQUAL(7.00, do_squareroot(49));
-  CU_ASSERT_EQUAL(10.00, do_squareroot(100));
+  CU_ASSERT_EQUAL(7.00, squareroot(49));
+  CU_ASSERT_EQUAL(10.00, squareroot(100));
 }
