@@ -1,7 +1,7 @@
 #include <CUnit/Basic.h>
 #include <CUnit/CUnit.h>
 
-#include <function.h>
+#include <calculator_operations.h>
 #define PROJECT_NAME "function"
 
 void test_add(void);
