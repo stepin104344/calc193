@@ -42,13 +42,13 @@ double celsius_to_fahrenheit(double celsius)
 double fahrenheit_to_kelvin(double input1)
 {
     double kelvin;
-    kelvin= (5/9)*(input1-32)+273.15;
+    kelvin= 273.5+((input1-32.0)*(5.0/9.0)) ;
     return kelvin;
 }
 double kelvin_to_fahrenheit(double input1)
 {
     double fahrenheit;
-    fahrenheit = (9/5)*(input1-273.15)+32;
+    fahrenheit = (9.0 /5.0)*(input1-273.15)+32;
     return fahrenheit;
 }
 double celsius_to_kelvin(double input1)
