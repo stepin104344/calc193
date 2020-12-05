@@ -18,10 +18,9 @@ void test_kelvin_to_fahrenheit(void);
 void test_celsius_to_kelvin(void);
 void test_kelvin_to_celsius(void);
 /*void test_logvalue(void);
-void test_log10value(void);
+void test_log10value(void);*/
 void test_power(void);
-void test_exponential(void);
-void test_squareroot(void);
+/*void test_exponential(void);
 void test_even_or_add(void);*/
 
 
@@ -46,10 +45,9 @@ int main() {
   CU_add_test(suite, "TEST_CELSIUS_TO_KELVIN", test_celsius_to_kelvin);
   CU_add_test(suite, "TEST_KELVIN_TO_CELSIUS", test_kelvin_to_celsius);
   /*CU_add_test(suite, "TEST_LOGVALUE", test_logvalue);
-  CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);
+  CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);*/
   CU_add_test(suite, "TEST_POWER", test_power);
-  CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
-  CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
+ /* CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
   CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_add);*/
   CU_add_test(suite, "TEST_MODULO", test_modulo);
 
@@ -144,5 +142,11 @@ void test_kelvin_to_celsius(void)
   CU_ASSERT_DOUBLE_EQUAL(45,kelvin_to_celsius(318.15),3);
   CU_ASSERT_DOUBLE_EQUAL(36,kelvin_to_celsius(309.15),3);
   CU_ASSERT_DOUBLE_EQUAL(16,kelvin_to_celsius(289.15),3);
+}
+void test_power(void)
+{
+  CU_ASSERT_EQUAL(25, power(5,2));
+  CU_ASSERT_EQUAL(343, power(7,3));
+  CU_ASSERT_EQUAL(125000, power(50,3));
 }
   
