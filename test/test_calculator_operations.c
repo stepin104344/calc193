@@ -4,12 +4,13 @@
 #include "calculator_operations.h"
 #define PROJECT_NAME "calculator_operations"
 
-void test_do_add(void);
-void test_do_subtract(void);
+void test_add(void);
+void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_squareroot(void);
-void test_factorial(void);
+void test_modulo(void);
+/*void test_factorial(void);
 void test_fahrenheit_to_celsius(void);
 void test_celsius_to_fahrenheit(void);
 void test_fahrenheit_to_kelvin(void);
@@ -21,8 +22,7 @@ void test_log10value(void);
 void test_power(void);
 void test_exponential(void);
 void test_squareroot(void);
-void test_modulo(void);
-void test_even_or_add(void);
+void test_even_or_add(void);*/
 
 
 int main() {
@@ -38,7 +38,7 @@ int main() {
   CU_add_test(suite, "TEST_MULTIPLY", test_multiply);
   CU_add_test(suite, "TEST_DIVIDE", test_divide);
   CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
-  CU_add_test(suite, "TEST_FACTORIAL", test_factorial);
+  /*CU_add_test(suite, "TEST_FACTORIAL", test_factorial);
   CU_add_test(suite, "TEST_FAHRENHEIT_TO_CELSIUS", test_fahrenheit_to_celsius);
   CU_add_test(suite, "TEST_CELSIUS_TO_FAHRENHEIT", test_celsius_to_fahrenheit);
   CU_add_test(suite, "TEST_FAHRENHEIT_TO_KELVIN", test_fahrenheit_to_kelvin);
@@ -50,8 +50,8 @@ int main() {
   CU_add_test(suite, "TEST_POWER", test_power);
   CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
   CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
+  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_add);*/
   CU_add_test(suite, "TEST_MODULO", test_modulo);
-  CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_add);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
