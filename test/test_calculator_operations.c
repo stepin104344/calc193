@@ -158,7 +158,7 @@ void test_exp(void)
 void test_even_or_odd(void)
 {
   CU_ASSERT_EQUAL(1, even_or_odd(25));
-  CU_ASSERT_UNEQUAL(0, even_or_odd(49));
+  CU_ASSERT_NOT_EQUAL(0, even_or_odd(49));
   CU_ASSERT_EQUAL(0, even_or_odd(100));
 }
   
