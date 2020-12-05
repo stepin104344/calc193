@@ -111,12 +111,14 @@ int main()
             if(c==0)
             {
             printf("Number is Even");
+            break;
             }
             else
             {
             printf("Number is Odd");
-            }
             break;
+            }
+           
         default :
             printf("Please choose valid choice to perform respective operation");
 
