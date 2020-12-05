@@ -23,7 +23,7 @@ int main()
     printf("10.log value\n");
     printf("11.log10 value\n");
     printf("12.Exponential\n");
-    printf("13.To Find a number is even or add\n");
+    printf("13.To Find a number is even or odd\n");
     printf("\nEnter you choice: ");
     scanf("%d",&choice);
     switch(choice)
@@ -105,7 +105,7 @@ int main()
             printf("%lf",result);
             break;
         case 13:
-            printf("Enter the number to find  even or add\n");
+            printf("Enter the number to find  even or odd\n");
             scanf("%d",&a);
             c=even_or_odd(a);
             if(c==0)
