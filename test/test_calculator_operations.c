@@ -45,7 +45,7 @@ int main() {
   CU_add_test(suite, "TEST_KELVIN_TO_FAHRENHEIT", test_kelvin_to_fahrenheit);
   CU_add_test(suite, "TEST_CELSIUS_TO_KELVIN", test_celsius_to_kelvin);
   CU_add_test(suite, "TEST_KELVIN_TO_CELSIUS", test_kelvin_to_celsius);
-  CU_add_test(suite, "TEST_LOGVALUE", test_modulus);
+  CU_add_test(suite, "TEST_LOGVALUE", test_logvalue);
   CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);
   CU_add_test(suite, "TEST_POWER", test_power);
   CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
@@ -92,7 +92,7 @@ void test_do_divide(void) {
   CU_ASSERT_EQUAL(3.00, divide(1500,500));
 }
 
-void test_do_modul0(void) {
+void test_do_modulo(void) {
   CU_ASSERT_EQUAL(1, modulo(5,2));
   CU_ASSERT_EQUAL(3, modulo(7,4));
   CU_ASSERT_EQUAL(0, modulo(1500,500));
