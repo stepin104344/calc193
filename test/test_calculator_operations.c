@@ -4,8 +4,8 @@
 #include "calculator_operations.h"
 #define PROJECT_NAME "calculator_operations"
 
-void test_add(void);
-void test_subtract(void);
+void test_do_add(void);
+void test_do_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_squareroot(void);
@@ -33,8 +33,8 @@ int main() {
   CU_pSuite suite = CU_add_suite(PROJECT_NAME, 0, 0);
 /* Note: Do not edit END */
 
-  CU_add_test(suite, "TEST_ADD", test_add);
-  CU_add_test(suite, "TEST_SUBTRACT", test_subtract);
+  CU_add_test(suite, "TEST_ADD", test_do_add);
+  CU_add_test(suite, "TEST_SUBTRACT", test_do_subtract);
   CU_add_test(suite, "TEST_MULTIPLY", test_multiply);
   CU_add_test(suite, "TEST_DIVIDE", test_divide);
   CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
@@ -68,13 +68,13 @@ int main() {
 
 //-------------------------------------------------------ARITHEMETIC OPERATIONS----------------------------------------------
 
-void test_add(void) {
+void test_do_add(void) {
   CU_ASSERT_EQUAL(7.000, add(5,2));
   CU_ASSERT_EQUAL(10.00, add(7,3));
   CU_ASSERT_EQUAL(2000.00, add(500,1500));
 }
 
-void test_subtract(void) {
+void test_do_subtract(void) {
   CU_ASSERT_EQUAL(3.00,subtract(5,2));
   CU_ASSERT_EQUAL(4.00, subtract(7,3));
   CU_ASSERT_EQUAL(1000.00, subtract(1500,500));
