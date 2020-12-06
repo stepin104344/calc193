@@ -23,6 +23,7 @@ void test_power(void);
 void test_exponential(void);
 void test_even_or_odd(void);
 void test_leap(void);
+void test_prime(void);
 
 
 int main() {
@@ -52,6 +53,7 @@ int main() {
   CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_odd);
   CU_add_test(suite, "TEST_MODULO", test_modulo);
   CU_add_test(suite, "TEST_LEAP", test_leap);
+  CU_add_test(suite, "TEST_PRIME", test_prime);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -179,5 +181,11 @@ void test_leap(void)
   CU_ASSERT_EQUAL(1, leap(2020));
   CU_ASSERT_NOT_EQUAL(0, leap(2016));
   CU_ASSERT_EQUAL(0, leap(1001));
+}
+void test_prime(void)
+{
+  CU_ASSERT_EQUAL(1, prime(8));
+  CU_ASSERT_NOT_EQUAL(0, prime(9));
+  CU_ASSERT_EQUAL(0, prime(7));
 }
   
