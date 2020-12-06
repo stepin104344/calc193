@@ -234,8 +234,8 @@ void length()
         printf("2.miles to kilometer\n");
         printf("3.kilometer to foot\n");
         printf("4.foot to kilometer\n");
-        printf("5.miles to foot\n");
-        printf("6.foot to miles\n");
+        printf("5.miles to inches\n");
+        printf("6.inches to miles\n");
         printf("Enter the choice\n");
         scanf("%d",&choice);
         switch(choice)
@@ -266,15 +266,15 @@ void length()
             printf("%lf",result);
             break;
         case 5:
-            printf("\nEnter length to convert miles to foot");
+            printf("\nEnter length to convert miles to inches");
             scanf("%lf",&input1);
-            result=miles_to_foot(input1);
+            result=miles_to_inches(input1);
             printf("%lf",result);
             break;
         case 6:
-            printf("\nEnter length to convert foot to miles");
+            printf("\nEnter length to convert inches to miles");
             scanf("%lf",&input1);
-            result=foot_to_miles(input1);
+            result=inches_to_miles(input1);
             printf("%lf",result);
             break;
     }
