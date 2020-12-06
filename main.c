@@ -145,7 +145,7 @@ int main()
             printf("Enter an integer to check whether it is prime or not.\n");
             scanf("%d",&n);
  
-             result = check_prime(n);
+             result = prime(n);
  
              if ( result == 1 )
              {
