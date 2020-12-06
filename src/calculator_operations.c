@@ -83,7 +83,7 @@ double power(double x, double y)
      result = pow(x,y);
      return result;
 }
-int do_fact(int in1)
+int fact(int in1)
 {
     int i,fact =1;
     if (in1 < 0)
