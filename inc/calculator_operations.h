@@ -58,6 +58,7 @@ int modulo(int x,int y);
 int even_or_odd(int value);
 int fact(int);
 int leap(int y);
+int prime(int void);
 
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
