@@ -56,6 +56,7 @@ double exponential(double value);
 double squareroot(double value);
 int modulo(int x,int y);
 int even_or_odd(int value);
+int fact(int);
 
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
