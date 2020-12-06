@@ -173,9 +173,9 @@ void test_miles_to_kilometer(void)
 }
 void test_kilometer_to_foot(void)
 {
-  CU_ASSERT_DOUBLE_EQUAL(298.706,kilometer_to_foot(78),3);
-  CU_ASSERT_DOUBLE_EQUAL(286.483,kilometer_to_foot(56),3);
-  CU_ASSERT_DOUBLE_EQUAL(280.372,kilometer_to_foot(45),3);
+  CU_ASSERT_DOUBLE_EQUAL(255906,kilometer_to_foot(78),3);
+  CU_ASSERT_DOUBLE_EQUAL(183727,kilometer_to_foot(56),3);
+  CU_ASSERT_DOUBLE_EQUAL(147638,kilometer_to_foot(45),3);
 }
 void test_foot_to_kilometer(void)
 {
