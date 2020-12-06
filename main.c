@@ -6,7 +6,7 @@ int main()
     double input1,input2;
     double result;
     int res1;
-    int in1;
+    int in1,out;
     double triginput,trigoutput;
     int a=0;
     int b=0;
