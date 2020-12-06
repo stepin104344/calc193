@@ -130,3 +130,14 @@ int leap(int y)
  else
     return 0;
 }
+int prime(int a)
+{
+   int c;
+ 
+   for ( c = 2 ; c <= a - 1 ; c++ )
+   { 
+      if ( a%c == 0 )
+     return 0;
+   }
+   return 1;
+}
