@@ -17,6 +17,12 @@ void test_fahrenheit_to_kelvin(void);
 void test_kelvin_to_fahrenheit(void);
 void test_celsius_to_kelvin(void);
 void test_kelvin_to_celsius(void);
+void test_kilometer_to_miles(void);
+void test_miles_to_kilometer(void);
+void test_kilometer_to_foot(void);
+void test_foot_to_kilometer(void);
+void test_miles_to_inches(void);
+void test_inches_to_miles(void);
 void test_logvalue(void);
 void test_log10value(void);
 void test_power(void);
@@ -46,6 +52,12 @@ int main() {
   CU_add_test(suite, "TEST_KELVIN_TO_FAHRENHEIT", test_kelvin_to_fahrenheit);
   CU_add_test(suite, "TEST_CELSIUS_TO_KELVIN", test_celsius_to_kelvin);
   CU_add_test(suite, "TEST_KELVIN_TO_CELSIUS", test_kelvin_to_celsius);
+  CU_add_test(suite, "TEST_KILOMETER_TO_MILES", test_kilometer_to_miles);
+  CU_add_test(suite, "TEST_MILES_TO_KILOMETER", test_miles_to_kilometer);
+  CU_add_test(suite, "TEST_KILOMETER_TO_FOOT", test_kilometer_to_foot);
+  CU_add_test(suite, "TEST_FOOT_TO_KILOMETER", test_foot_to_kilometer);
+  CU_add_test(suite, "TEST_MILES_TO_INCHES", test_miles_to_inches);
+  CU_add_test(suite, "TEST_INCHES_TO_MILES", test_inches_to_miles);
   CU_add_test(suite, "TEST_LOGVALUE", test_logvalue);
   CU_add_test(suite, "TEST_LOG10VALUE", test_log10value);
   CU_add_test(suite, "TEST_POWER", test_power);
@@ -128,6 +140,42 @@ void test_fahrenheit_to_kelvin(void)
   CU_ASSERT_DOUBLE_EQUAL(298.706,fahrenheit_to_kelvin(78),3);
   CU_ASSERT_DOUBLE_EQUAL(286.483,fahrenheit_to_kelvin(56),3);
   CU_ASSERT_DOUBLE_EQUAL(280.372,fahrenheit_to_kelvin(45),3);
+}
+void test_kelvin_to_fahrenheit(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(78,kelvin_to_fahrenheit(298.706),3);
+  CU_ASSERT_DOUBLE_EQUAL(56,kelvin_to_fahrenheit(286.483),3);
+  CU_ASSERT_DOUBLE_EQUAL(45,kelvin_to_fahrenheit(280.372),3);
+}
+void test_celsius_to_kelvin(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(318.15,celsius_to_kelvin(45),3);
+  CU_ASSERT_DOUBLE_EQUAL(309.15,celsius_to_kelvin(36),3);
+  CU_ASSERT_DOUBLE_EQUAL(289.15,celsius_to_kelvin(16),3);
+}
+void test_kelvin_to_celsius(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(45,kelvin_to_celsius(318.15),3);
+  CU_ASSERT_DOUBLE_EQUAL(36,kelvin_to_celsius(309.15),3);
+  CU_ASSERT_DOUBLE_EQUAL(16,kelvin_to_celsius(289.15),3);
+}
+void test_kilometer_to_miles(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(37.7778,kilometer_to_miles(100),3);
+  CU_ASSERT_DOUBLE_EQUAL(23.8889,kilometer_to_miles(75),3);
+  CU_ASSERT_DOUBLE_EQUAL(43.3333,kilometer_to_miles(110),3);
+}
+void test_miles_to_kilometer(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(93.2,miles_to_kilometer(34),3);
+  CU_ASSERT_DOUBLE_EQUAL(170.6,miles_to_kilometer(77),3);
+  CU_ASSERT_DOUBLE_EQUAL(127.4,miles_to_kilometer(53),3);
+}
+void test_kilometer_to_foot(void)
+{
+  CU_ASSERT_DOUBLE_EQUAL(298.706,kilometer_to_foot(78),3);
+  CU_ASSERT_DOUBLE_EQUAL(286.483,kilometer_to_foot(56),3);
+  CU_ASSERT_DOUBLE_EQUAL(280.372,kilometer_to_foot(45),3);
 }
 void test_kelvin_to_fahrenheit(void)
 {
