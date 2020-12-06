@@ -11,6 +11,7 @@ int main()
     int a=0;
     int b=0;
     int c=0;
+    int n,result;
     int year;
     printf("\nPlease select the required operation to be performed \n");
     printf("1.Addition\n");
@@ -27,6 +28,7 @@ int main()
     printf("12.Exponential\n");
     printf("13.To Find a number is even or odd\n");
     printf("14.Enter the year to know leap year or not \n");
+    printf("15.Enter an integer to check whether it is prime or not \n"); 
     printf("\nEnter you choice: ");
     scanf("%d",&choice);
     switch(choice)
@@ -137,6 +139,23 @@ int main()
             {
             printf("\n%d is not leap year",year);
             break;
+            }
+         case 15:
+            
+            printf("Enter an integer to check whether it is prime or not.\n");
+            scanf("%d",&n);
+ 
+             result = check_prime(n);
+ 
+             if ( result == 1 )
+             {
+              printf("%d is prime.\n", n);
+              break;
+             }
+             else
+             {
+              printf("%d is not prime.\n", n);
+              break;
             }
             default :
             printf("Please choose valid choice to perform respective operation");
