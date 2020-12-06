@@ -22,6 +22,7 @@ void test_log10value(void);
 void test_power(void);
 void test_exponential(void);
 void test_even_or_odd(void);
+void test_leap(void);
 
 
 int main() {
@@ -50,6 +51,7 @@ int main() {
   CU_add_test(suite, "TEST_EXPONENTIAL", test_exponential);
   CU_add_test(suite, "TEST_EVEN_OR_ODD", test_even_or_odd);
   CU_add_test(suite, "TEST_MODULO", test_modulo);
+  CU_add_test(suite, "TEST_LEAP", test_leap);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -171,5 +173,11 @@ void test_logvalue(void) {
   CU_ASSERT_DOUBLE_EQUAL(3.2188, logvalue(25),0.5);
   CU_ASSERT_DOUBLE_EQUAL(3.891, logvalue(49),0.5);
   CU_ASSERT_DOUBLE_EQUAL(4.6051, logvalue(100),0.5);
+}
+void test_leap(void)
+{
+  CU_ASSERT_EQUAL(1, leap(2020));
+  CU_ASSERT_NOT_EQUAL(0, leap(2016));
+  CU_ASSERT_EQUAL(0, leap(1001));
 }
   
