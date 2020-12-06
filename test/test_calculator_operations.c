@@ -97,9 +97,9 @@ void test_modulo(void) {
 }
 
 void test_factorial(void) {
-  CU_ASSERT_EQUAL(120, do_fact(5));
-  CU_ASSERT_EQUAL(1, do_fact(1));
-  CU_ASSERT_EQUAL(6, do_fact(3));
+  CU_ASSERT_EQUAL(120, fact(5));
+  CU_ASSERT_EQUAL(1, fact(1));
+  CU_ASSERT_EQUAL(6, fact(3));
 }
 
 void test_squareroot(void) {
