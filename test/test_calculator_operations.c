@@ -184,8 +184,8 @@ void test_leap(void)
 }
 void test_prime(void)
 {
-  CU_ASSERT_EQUAL(1, prime(8));
-  CU_ASSERT_NOT_EQUAL(0, prime(9));
-  CU_ASSERT_EQUAL(0, prime(7));
+  CU_ASSERT_EQUAL(1, prime(5));
+  CU_ASSERT_EQUAL(1, prime(13));
+  CU_ASSERT_EQUAL(1, prime(7));
 }
   
