@@ -130,13 +130,13 @@ int leap(int y)
  else
     return 0;
 }
-int prime(int a)
+int prime(int z)
 {
-   int c;
+   int d;
  
-   for ( c = 2 ; c <= a - 1 ; c++ )
+   for ( d = 2 ; d <= a - 1 ; d++ )
    { 
-      if ( a%c == 0 )
+      if ( d%c == 0 )
      return 0;
    }
    return 1;
