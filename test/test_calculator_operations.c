@@ -10,7 +10,7 @@ void test_multiply(void);
 void test_divide(void);
 void test_squareroot(void);
 void test_modulo(void);
-/*void test_factorial(void);*/
+void test_factorial(void);
 void test_fahrenheit_to_celsius(void);
 void test_celsius_to_fahrenheit(void);
 void test_fahrenheit_to_kelvin(void);
@@ -37,7 +37,7 @@ int main() {
   CU_add_test(suite, "TEST_MULTIPLY", test_multiply);
   CU_add_test(suite, "TEST_DIVIDE", test_divide);
   CU_add_test(suite, "TEST_SQUAREROOT", test_squareroot);
-  /*CU_add_test(suite, "TEST_FACTORIAL", test_factorial);*/
+  CU_add_test(suite, "TEST_FACTORIAL", test_factorial);
   CU_add_test(suite, "TEST_FAHRENHEIT_TO_CELSIUS", test_fahrenheit_to_celsius);
   CU_add_test(suite, "TEST_CELSIUS_TO_FAHRENHEIT", test_celsius_to_fahrenheit);
   CU_add_test(suite, "TEST_FAHRENHEIT_TO_KELVIN", test_fahrenheit_to_kelvin);
@@ -96,11 +96,11 @@ void test_modulo(void) {
   CU_ASSERT_EQUAL(0, modulo(1500,500));
 }
 
-/*void test_do_factorial(void) {
+void test_factorial(void) {
   CU_ASSERT_EQUAL(120, do_fact(5));
   CU_ASSERT_EQUAL(1, do_fact(1));
   CU_ASSERT_EQUAL(6, do_fact(3));
-}*/
+}
 
 void test_squareroot(void) {
   CU_ASSERT_EQUAL(5.00, squareroot(25));
