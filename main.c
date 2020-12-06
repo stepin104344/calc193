@@ -31,6 +31,7 @@ int main()
     printf("13.To Find a number is even or odd\n");
     printf("14.Enter the year to know leap year or not \n");
     printf("15.Enter an integer to check whether it is prime or not \n"); 
+    printf("16.Length Conversion\n");
     printf("\nEnter you choice: ");
     scanf("%d",&choice);
     switch(choice)
@@ -159,6 +160,9 @@ int main()
               printf("%d is not prime.\n", n);
               break;
             }
+            case 16:
+            length();
+            break;
             default :
             printf("Please choose valid choice to perform respective operation");
 
@@ -169,7 +173,7 @@ int main()
     {
         int choice;
         double result,input1;
-        printf("please the respective operation for different temperature conversions\n");
+        printf("choose the respective operation for different temperature conversions\n");
         printf("1.fahrenheit to celsius\n");
         printf("2.celsius to fahrenheit\n");
         printf("3.fahrenheit to kelvin\n");
@@ -221,4 +225,63 @@ int main()
 
     return 0;
 }
+void length()
+    {
+        int choice;
+        double result,input1;
+        printf("choose the respective operation for different length conversions\n");
+        printf("1.kilometer to miles\n");
+        printf("2.miles to kilometer\n");
+        printf("3.kilometer to foot\n");
+        printf("4.foot to kilometer\n");
+        printf("5.miles to foot\n");
+        printf("6.foot to miles\n");
+        printf("Enter the choice\n");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+        case 1:
+             printf("\nEnter length to convert kilometer to miles");
+             scanf("%lf",&input1);
+             result=kilometer_to_miles(input1);
+             printf("%lf",result);
+             break;
+
+        case 2:
+            printf("\nEnter length to convert miles to kilometer");
+            scanf("%lf",&input1);
+            result=miles_to_kilometer(input1);
+            printf("%lf",result);
+            break;
+        case 3:
+            printf("\nEnter length to convert kilometer to foot");
+            scanf("%lf",&input1);
+            result=kilometer_to_foot(input1);
+            printf("%lf",result);
+            break;
+        case 4:
+            printf("\nEnter length to convert foot to kilometer");
+            scanf("%lf",&input1);
+            result=foot_to_kilometer(input1);
+            printf("%lf",result);
+            break;
+        case 5:
+            printf("\nEnter length to convert miles to foot");
+            scanf("%lf",&input1);
+            result=miles_to_foot(input1);
+            printf("%lf",result);
+            break;
+        case 6:
+            printf("\nEnter length to convert foot to miles");
+            scanf("%lf",&input1);
+            result=foot_to_miles(input1);
+            printf("%lf",result);
+            break;
+    }
+
+    return 0;
+}
+
+
+
 
