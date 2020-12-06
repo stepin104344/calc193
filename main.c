@@ -11,7 +11,7 @@ int main()
     int a=0;
     int b=0;
     int c=0;
-    int n,result;
+    int n,ram;
     int year;
     printf("\nPlease select the required operation to be performed \n");
     printf("1.Addition\n");
@@ -145,9 +145,9 @@ int main()
             printf("Enter an integer to check whether it is prime or not.\n");
             scanf("%d",&n);
  
-             result = prime(n);
+             ram = prime(n);
  
-             if ( result == 1 )
+             if ( ram == 1 )
              {
               printf("%d is prime.\n", n);
               break;
