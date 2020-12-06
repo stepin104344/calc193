@@ -69,7 +69,7 @@ double kilometer_to_miles(double kilometer)
 {
     double miles;
 
-   miles = (0.621371*km);
+   miles = (0.621371*kilometer);
     return miles;
 }
 double miles_to_kilometer(double miles)
