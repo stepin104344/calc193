@@ -65,6 +65,49 @@ double kelvin_to_celsius(double input1)
     celsius = input1-273;
     return celsius;
 }
+double kilometer_to_miles(double kilometer)
+{
+    double miles;
+
+   miles = (0.621371*km);
+    return miles;
+}
+double miles_to_kilometer(double miles)
+{
+    double kilometer;
+
+   kilometers = miles * 1.609;
+    return kilometer;
+}
+double kilometer_to_miles(double kilometer)
+{
+    double miles;
+
+   miles = (0.621371*km);
+    return miles;
+}
+double kilometer_to_miles(double kilometer)
+{
+    double miles;
+
+   miles = (0.621371*km);
+    return miles;
+}
+double kilometer_to_miles(double kilometer)
+{
+    double miles;
+
+   miles = (0.621371*km);
+    return miles;
+}
+
+double kilometer_to_miles(double kilometer)
+{
+    double miles;
+
+   miles = (0.621371*km);
+    return miles;
+}
 double logvalue(double value)
 {
     double result;
