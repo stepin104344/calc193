@@ -74,7 +74,7 @@ int main()
         case 7:
             printf("\nEnter a number for factorial");
             scanf("%d",&in1);
-            out = do_fact(in1);
+            out = fact(in1);
             printf("%d",out);
             break;
 
