@@ -11,6 +11,7 @@ int main()
     int a=0;
     int b=0;
     int c=0;
+    int year;
     printf("\nPlease select the required operation to be performed \n");
     printf("1.Addition\n");
     printf("2.Subtraction\n");
@@ -25,6 +26,7 @@ int main()
     printf("11.log10 value\n");
     printf("12.Exponential\n");
     printf("13.To Find a number is even or odd\n");
+    printf("14.Enter the year to know leap year or not \n");
     printf("\nEnter you choice: ");
     scanf("%d",&choice);
     switch(choice)
@@ -122,8 +124,21 @@ int main()
             printf("Number is Odd");
             break;
             }
-           
-        default :
+        case 14:
+            
+            printf("Enter any year : ");
+            scanf("%d", &year);
+            if(leap(year))
+            {
+            printf("\n%d is leap year",year);
+            break;
+            }
+            else
+            {
+            printf("\n%d is not leap year",year);
+            break;
+            }
+            default :
             printf("Please choose valid choice to perform respective operation");
 
     }
