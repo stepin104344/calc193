@@ -134,9 +134,9 @@ int prime(int z)
 {
    int d;
  
-   for ( d = 2 ; d <= a - 1 ; d++ )
+   for ( d = 2 ; d <= z - 1 ; d++ )
    { 
-      if ( d%c == 0 )
+      if ( z%d == 0 )
      return 0;
    }
    return 1;
