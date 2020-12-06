@@ -76,36 +76,36 @@ double miles_to_kilometer(double miles)
 {
     double kilometer;
 
-   kilometers = miles * 1.609;
+   kilometer = miles * 1.609;
     return kilometer;
 }
-double kilometer_to_miles(double kilometer)
+double kilometer_to_foot(double kilometer)
 {
-    double miles;
+    double foot;
 
-   miles = (0.621371*km);
-    return miles;
+   foot= kilometer*3280.84;
+    return foot;
 }
-double kilometer_to_miles(double kilometer)
+double foot_to_kilometer(double foot)
 {
-    double miles;
+    double kilometer;
 
-   miles = (0.621371*km);
-    return miles;
+   kilometer=(foot/3280.84);
+    return kilometer;
 }
-double kilometer_to_miles(double kilometer)
+double miles_to_inches(double miles)
 {
-    double miles;
+    double inches;
 
-   miles = (0.621371*km);
-    return miles;
+   inches = (miles*63360);
+    return inches;
 }
 
-double kilometer_to_miles(double kilometer)
+double inches_to_miles(double inches)
 {
     double miles;
 
-   miles = (0.621371*km);
+   miles = (inches/63360);
     return miles;
 }
 double logvalue(double value)
